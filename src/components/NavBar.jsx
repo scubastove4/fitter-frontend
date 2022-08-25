@@ -1,17 +1,16 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { CgProfile, CgHome, CgLogOut } from 'react-icons/cg'
+import fitterLogo from '../images/fitterlogo.png'
 
 const NavBar = ({ user, logout }) => {
   return (
     <header>
       {user ? (
         <nav className="navbar">
-          {/* add logo icon */}
           <Link to="/feed" id="logo">
-            <img src="" alt="logo" />
+            <img src={`${fitterLogo}`} alt="logo" />
           </Link>
-          {/* <div className="nav-links"> */}
           <div className="nav-mid">
             <NavLink
               to="/feed"
@@ -36,7 +35,6 @@ const NavBar = ({ user, logout }) => {
             </NavLink>
             <h3>Hi, {user.username} </h3>
           </div>
-          {/* </div> */}
         </nav>
       ) : null}
     </header>

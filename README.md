@@ -15,7 +15,7 @@
 
 ## **_Description_**
 
-![Fitter](images/fitterlogo.png)
+![Fitter](src/images/fitterlogo.png)
 
 Want to show off your workout routine or simply need some inspiration? Fitter is the perfect fit 😉 for you. With Fitter you are able to post your own fitness journey, as well as see what the rest of the FitFam is up to. Users will also have the ability to like and comment on other Feats.
 
@@ -47,15 +47,15 @@ Necessary packages are included in the package.json, so you just need to run npm
 
 ### Main Feed
 
-![Main Feed](images/main_feed.png)
+![Main Feed](src/images/main_feed.png)
 
 ### Editing Feats
 
-![Edit Feat](images/edit_on_feed.png)
+![Edit Feat](src/images/edit_on_feed.png)
 
 ### User Profile
 
-![User Profile](images/user_profile.png)
+![User Profile](src/images/user_profile.png)
 
 ## **_Task List(s)_**
 

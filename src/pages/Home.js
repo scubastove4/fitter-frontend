@@ -79,16 +79,19 @@ const Home = ({ user, setUser, signUp, setSignUp, upOrIn, setUpOrIn }) => {
         id="home-form-container-inner"
         className={`${rotate ? 'rotated' : ''}`}
       >
-        <SignUpForm
-          signUpValues={signUpValues}
-          updateSignUpValues={updateSignUpValues}
-          submitSignUp={submitSignUp}
-        />
-        <LoginForm
-          loginValues={loginValues}
-          updateLoginValues={updateLoginValues}
-          submitLogin={submitLogin}
-        />
+        {signUp ? (
+          <SignUpForm
+            signUpValues={signUpValues}
+            updateSignUpValues={updateSignUpValues}
+            submitSignUp={submitSignUp}
+          />
+        ) : (
+          <LoginForm
+            loginValues={loginValues}
+            updateLoginValues={updateLoginValues}
+            submitLogin={submitLogin}
+          />
+        )}
       </div>
       <button
         disabled={user}
