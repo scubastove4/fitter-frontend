@@ -4,6 +4,7 @@ import { SignUpUser, LoginUser } from '../services/AuthReq'
 
 import SignUpForm from '../components/SignUpForm'
 import LoginForm from '../components/LoginForm'
+import FitterLogo from '../images/fitterlogo.png'
 
 const Home = ({ user, setUser, signUp, setSignUp, upOrIn, setUpOrIn }) => {
   const [signUpValues, setSignUpValues] = useState({
@@ -75,6 +76,7 @@ const Home = ({ user, setUser, signUp, setSignUp, upOrIn, setUpOrIn }) => {
 
   return (
     <div id="home-form-container">
+      <img src={FitterLogo} alt="fitter" />
       <div
         id="home-form-container-inner"
         className={`${rotate ? 'rotated' : ''}`}
