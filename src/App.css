@@ -180,7 +180,10 @@ a,
 
 /* ///////////////////   for card flip above    //////////// */
 
-#sign-up-form span {
+/* ///////////////////   sign up and login forms below    //////////// */
+
+#sign-up-form span,
+#login-form span {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +193,8 @@ a,
   background-color: transparent;
 }
 
-#sign-up-form span * {
+#sign-up-form span *,
+#login-form span * {
   background-color: transparent;
   color: #000;
   font-size: 1.25em;
@@ -201,14 +205,16 @@ label {
   margin-right: 2%;
 }
 
-#sign-up-form span input {
+#sign-up-form span input,
+#login-form span input {
   width: 80%;
   height: 60%;
   border-radius: 1em;
   padding-left: 2%;
 }
 
-#sign-up-form span ::placeholder {
+#sign-up-form span ::placeholder,
+#login-form span ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #2b2c28;
   font-size: 1em;
@@ -217,7 +223,8 @@ label {
   padding-left: 2%;
 }
 
-#sign-up-form span :-ms-input-placeholder {
+#sign-up-form span :-ms-input-placeholder,
+#login-form span :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #2b2c28;
   font-size: 1em;
@@ -225,7 +232,8 @@ label {
   padding-left: 2%;
 }
 
-#sign-up-form span ::-ms-input-placeholder {
+#sign-up-form span ::-ms-input-placeholder,
+#login-form span ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #2b2c28;
   font-size: 1em;
@@ -233,16 +241,13 @@ label {
   padding-left: 2%;
 }
 
-#sign-up-form button {
+#sign-up-form button,
+#login-form button {
   margin-top: 3%;
   height: 9%;
   width: 45%;
   font-size: 1.2em;
   border-radius: 1em;
-}
-
-#login-form button {
-  margin-top: 3%;
 }
 
 #up-or-in-btn {
